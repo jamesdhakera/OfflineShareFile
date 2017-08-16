@@ -18,17 +18,30 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/toolbar"
+        app:srcCompat="@drawable/sf_logo_name" />
+
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         android:id="@+id/linearLayout2"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="60dp"
+        android:layout_centerVertical="false"
+        android:layout_below="@+id/imageView3"
         android:layout_centerHorizontal="true">
 
         <Button
             android:id="@+id/button"
-            android:layout_width="wrap_content"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/send_button_bg"
             android:gravity="center"
@@ -39,16 +52,6 @@
         <!--android:layout_marginRight="@dimen/share_them_actions_margin"-->
 
     </LinearLayout>
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/toolbar"
-        app:srcCompat="@drawable/sf_logo_name" />
-
     <Button
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -62,5 +65,7 @@
         android:text="Receive"
         android:textColor="@android:color/white"
         android:textSize="@dimen/circular_textview_size" />
+
+
 
 </RelativeLayout>

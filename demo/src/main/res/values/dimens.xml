@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="circular_view_dimension">100dp</dimen>
-    <dimen name="rectangular_width_view_dimension">200dp</dimen>
-    <dimen name="rectangular_height_view_dimension">100dp</dimen>
+    <dimen name="rectangular_width_view_dimension">300dp</dimen>
+    <dimen name="rectangular_height_view_dimension">50dp</dimen>
     <dimen name="circular_textview_size">20sp</dimen>
     <dimen name="share_them_actions_margin">20dp</dimen>
 </resources>
