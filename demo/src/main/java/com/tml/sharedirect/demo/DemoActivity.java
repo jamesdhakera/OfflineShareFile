@@ -1,4 +1,4 @@
-package com.tml.sharethem.demo;
+package com.tml.sharedirect.demo;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -15,11 +15,11 @@ import com.github.angads25.filepicker.controller.DialogSelectionListener;
 import com.github.angads25.filepicker.model.DialogConfigs;
 import com.github.angads25.filepicker.model.DialogProperties;
 import com.github.angads25.filepicker.view.FilePickerDialog;
-import com.tml.sharethem.receiver.ReceiverActivity;
-import com.tml.sharethem.sender.SHAREthemActivity;
-import com.tml.sharethem.sender.SHAREthemService;
-import com.tml.sharethem.utils.Utils;
-import com.tml.sharethem.utils.HotspotControl;
+import com.tml.sharedirect.receiver.ReceiverActivity;
+import com.tml.sharedirect.sender.SHAREthemActivity;
+import com.tml.sharedirect.sender.SHAREthemService;
+import com.tml.sharedirect.utils.Utils;
+import com.tml.sharedirect.utils.HotspotControl;
 
 import java.io.File;
 

@@ -1,11 +1,11 @@
-package com.tml.sharethem.utils;
+package com.tml.sharedirect.utils;
 
 import android.content.Context;
 import android.net.wifi.WifiConfiguration;
 import android.net.wifi.WifiManager;
 import android.util.Log;
 
-import com.tml.sharethem.sender.SHAREthemActivity;
+import com.tml.sharedirect.sender.SHAREthemActivity;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -136,7 +136,7 @@ public class HotspotControl {
      * Creates a new OPEN {@link WifiConfiguration} and invokes {@link WifiManager}'s method via <code>Reflection</code> to enable Hotspot
      *
      * @param name Open HotSpot SSID
-     * @param port Port number assigned to {@link com.tml.sharethem.sender.SHAREthemServer}, not used anywhere in {@link HotspotControl} but helps {@link SHAREthemActivity} to display port info
+     * @param port Port number assigned to {@link com.tml.sharedirect.sender.SHAREthemServer}, not used anywhere in {@link HotspotControl} but helps {@link SHAREthemActivity} to display port info
      * @return true if {@link WifiManager}'s method is successfully called
      */
     public boolean enableShareThemHotspot(String name, int port) {

@@ -1,4 +1,4 @@
-package com.tml.sharethem.utils;
+package com.tml.sharedirect.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

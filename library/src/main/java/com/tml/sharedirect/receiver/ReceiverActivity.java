@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.tml.sharethem.receiver;
+package com.tml.sharedirect.receiver;
 
 import android.Manifest;
 import android.annotation.TargetApi;
@@ -55,17 +55,17 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.tml.sharethem.R;
-import com.tml.sharethem.utils.Utils;
-import com.tml.sharethem.utils.WifiUtils;
+import com.tml.sharedirect.R;
+import com.tml.sharedirect.utils.Utils;
+import com.tml.sharedirect.utils.WifiUtils;
 
 import java.lang.ref.WeakReference;
 import java.util.List;
 
-import static com.tml.sharethem.receiver.ReceiverActivity.WifiTasksHandler.SCAN_FOR_WIFI_RESULTS;
-import static com.tml.sharethem.receiver.ReceiverActivity.WifiTasksHandler.WAIT_FOR_CONNECT_ACTION_TIMEOUT;
-import static com.tml.sharethem.receiver.ReceiverActivity.WifiTasksHandler.WAIT_FOR_RECONNECT_ACTION_TIMEOUT;
-import static com.tml.sharethem.utils.WifiUtils.connectToOpenHotspot;
+import static com.tml.sharedirect.receiver.ReceiverActivity.WifiTasksHandler.SCAN_FOR_WIFI_RESULTS;
+import static com.tml.sharedirect.receiver.ReceiverActivity.WifiTasksHandler.WAIT_FOR_CONNECT_ACTION_TIMEOUT;
+import static com.tml.sharedirect.receiver.ReceiverActivity.WifiTasksHandler.WAIT_FOR_RECONNECT_ACTION_TIMEOUT;
+import static com.tml.sharedirect.utils.WifiUtils.connectToOpenHotspot;
 
 /**
  * Controls

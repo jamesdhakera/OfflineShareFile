@@ -1,4 +1,4 @@
-package com.tml.sharethem.sender;
+package com.tml.sharedirect.sender;
 
 /**
  * Created by Sri on 18/12/16.

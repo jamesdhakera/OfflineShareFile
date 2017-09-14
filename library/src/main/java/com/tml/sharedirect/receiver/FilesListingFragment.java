@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.tml.sharethem.receiver;
+package com.tml.sharedirect.receiver;
 
 import android.app.DownloadManager;
 import android.content.Context;
@@ -37,9 +37,9 @@ import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.tml.sharethem.R;
-import com.tml.sharethem.utils.DividerItemDecoration;
-import com.tml.sharethem.utils.RecyclerViewArrayAdapter;
+import com.tml.sharedirect.R;
+import com.tml.sharedirect.utils.DividerItemDecoration;
+import com.tml.sharedirect.utils.RecyclerViewArrayAdapter;
 
 import java.io.BufferedReader;
 import java.io.IOException;

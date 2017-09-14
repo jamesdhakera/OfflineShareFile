@@ -1,4 +1,4 @@
-package com.tml.sharethem.utils;
+package com.tml.sharedirect.utils;
 
 /**
  * Created by Sri on 18/12/16.

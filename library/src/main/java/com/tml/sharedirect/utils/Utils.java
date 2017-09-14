@@ -1,4 +1,4 @@
-package com.tml.sharethem.utils;
+package com.tml.sharedirect.utils;
 
 import android.app.ActivityManager;
 import android.content.Context;
@@ -7,7 +7,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.provider.Settings;
 
-import com.tml.sharethem.sender.SHAREthemService;
+import com.tml.sharedirect.sender.SHAREthemService;
 
 import org.json.JSONArray;
 import org.json.JSONException;

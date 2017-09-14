@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.tml.sharethem.sender;
+package com.tml.sharedirect.sender;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -33,21 +33,21 @@ import android.text.TextUtils;
 import android.util.Base64;
 import android.util.Log;
 
-import com.tml.sharethem.R;
-import com.tml.sharethem.utils.HotspotControl;
-import com.tml.sharethem.utils.WifiUtils;
+import com.tml.sharedirect.R;
+import com.tml.sharedirect.utils.HotspotControl;
+import com.tml.sharedirect.utils.WifiUtils;
 
 import java.lang.ref.WeakReference;
 import java.net.BindException;
 
-import static com.tml.sharethem.sender.SHAREthemService.ShareIntents.SHARE_CLIENT_IP;
-import static com.tml.sharethem.sender.SHAREthemService.ShareIntents.SHARE_SERVER_UPDATES_INTENT_ACTION;
-import static com.tml.sharethem.sender.SHAREthemService.ShareIntents.SHARE_SERVER_UPDATE_FILE_NAME;
-import static com.tml.sharethem.sender.SHAREthemService.ShareIntents.SHARE_SERVER_UPDATE_TEXT;
-import static com.tml.sharethem.sender.SHAREthemService.ShareIntents.SHARE_TRANSFER_PROGRESS;
-import static com.tml.sharethem.sender.SHAREthemService.ShareIntents.TYPE;
-import static com.tml.sharethem.sender.SHAREthemService.ShareIntents.Types.AP_DISABLED_ACKNOWLEDGEMENT;
-import static com.tml.sharethem.sender.SHAREthemService.ShareIntents.Types.FILE_TRANSFER_STATUS;
+import static com.tml.sharedirect.sender.SHAREthemService.ShareIntents.SHARE_CLIENT_IP;
+import static com.tml.sharedirect.sender.SHAREthemService.ShareIntents.SHARE_SERVER_UPDATES_INTENT_ACTION;
+import static com.tml.sharedirect.sender.SHAREthemService.ShareIntents.SHARE_SERVER_UPDATE_FILE_NAME;
+import static com.tml.sharedirect.sender.SHAREthemService.ShareIntents.SHARE_SERVER_UPDATE_TEXT;
+import static com.tml.sharedirect.sender.SHAREthemService.ShareIntents.SHARE_TRANSFER_PROGRESS;
+import static com.tml.sharedirect.sender.SHAREthemService.ShareIntents.TYPE;
+import static com.tml.sharedirect.sender.SHAREthemService.ShareIntents.Types.AP_DISABLED_ACKNOWLEDGEMENT;
+import static com.tml.sharedirect.sender.SHAREthemService.ShareIntents.Types.FILE_TRANSFER_STATUS;
 
 
 /**

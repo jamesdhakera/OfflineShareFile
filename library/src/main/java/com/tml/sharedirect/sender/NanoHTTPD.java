@@ -1,9 +1,9 @@
-package com.tml.sharethem.sender;
+package com.tml.sharedirect.sender;
 
 import android.util.Log;
 
-import com.tml.sharethem.utils.Utils;
-import com.tml.sharethem.utils.WifiUtils;
+import com.tml.sharedirect.utils.Utils;
+import com.tml.sharedirect.utils.WifiUtils;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayInputStream;

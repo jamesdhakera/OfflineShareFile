@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.tml.sharethem.sender;
+package com.tml.sharedirect.sender;
 
 import android.content.Context;
 import android.content.Intent;
@@ -23,7 +23,7 @@ import android.graphics.BitmapFactory;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.tml.sharethem.R;
+import com.tml.sharedirect.R;
 
 import org.json.JSONArray;
 
@@ -120,11 +120,11 @@ class SHAREthemServer extends NanoHTTPD {
     //      For more info: https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork(int, boolean)
 
     /**
-     * Creates an Error {@link com.tml.sharethem.sender.NanoHTTPD.Response} with
+     * Creates an Error {@link com.tml.sharedirect.sender.NanoHTTPD.Response} with
      *
      * @param status  error Status like <code>Response.Status.FORBIDDEN</code>
      * @param message error message
-     * @return {@link com.tml.sharethem.sender.NanoHTTPD.Response}
+     * @return {@link com.tml.sharedirect.sender.NanoHTTPD.Response}
      */
     private Response createErrorResponse(Response.Status status, String message) {
         Log.e(TAG, "error while creating response: " + message);
@@ -137,9 +137,9 @@ class SHAREthemServer extends NanoHTTPD {
     }
 
     /**
-     * Creates a success {@link com.tml.sharethem.sender.NanoHTTPD.Response} with Shared Files URLS data in @{@link com.google.gson.JsonArray} format
+     * Creates a success {@link com.tml.sharedirect.sender.NanoHTTPD.Response} with Shared Files URLS data in @{@link com.google.gson.JsonArray} format
      *
-     * @return {@link com.tml.sharethem.sender.NanoHTTPD.Response}
+     * @return {@link com.tml.sharedirect.sender.NanoHTTPD.Response}
      */
     private Response createFilePathsResponse() {
         return new NanoHTTPD.Response(Response.Status.OK, MIME_JSON, new JSONArray(Arrays.asList(m_filesTobeHosted)).toString());
@@ -150,7 +150,7 @@ class SHAREthemServer extends NanoHTTPD {
      *
      * @param clientIp Receiver IP to which Response is intended for
      * @param fileUrl  url of file among Shared files array
-     * @return {@link com.tml.sharethem.sender.NanoHTTPD.Response}
+     * @return {@link com.tml.sharedirect.sender.NanoHTTPD.Response}
      * @throws IOException
      */
     private Response createFileResponse(String fileUrl, String clientIp) throws IOException {

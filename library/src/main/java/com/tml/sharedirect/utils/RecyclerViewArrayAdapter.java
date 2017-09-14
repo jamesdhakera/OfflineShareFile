@@ -1,4 +1,4 @@
-package com.tml.sharethem.utils;
+package com.tml.sharedirect.utils;
 
 import android.support.v7.widget.RecyclerView;
 

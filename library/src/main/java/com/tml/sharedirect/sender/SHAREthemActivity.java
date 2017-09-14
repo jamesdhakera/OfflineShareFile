@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.tml.sharethem.sender;
+package com.tml.sharedirect.sender;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -47,12 +47,12 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.tml.sharethem.R;
-import com.tml.sharethem.utils.DividerItemDecoration;
-import com.tml.sharethem.utils.RecyclerViewArrayAdapter;
-import com.tml.sharethem.utils.Utils;
-import com.tml.sharethem.utils.HotspotControl;
-import com.tml.sharethem.utils.WifiUtils;
+import com.tml.sharedirect.R;
+import com.tml.sharedirect.utils.DividerItemDecoration;
+import com.tml.sharedirect.utils.RecyclerViewArrayAdapter;
+import com.tml.sharedirect.utils.Utils;
+import com.tml.sharedirect.utils.HotspotControl;
+import com.tml.sharedirect.utils.WifiUtils;
 
 import org.json.JSONArray;
 
@@ -61,9 +61,9 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import static com.tml.sharethem.sender.SHAREthemActivity.ShareUIHandler.LIST_API_CLIENTS;
-import static com.tml.sharethem.sender.SHAREthemActivity.ShareUIHandler.UPDATE_AP_STATUS;
-import static com.tml.sharethem.utils.Utils.getRandomColor;
+import static com.tml.sharedirect.sender.SHAREthemActivity.ShareUIHandler.LIST_API_CLIENTS;
+import static com.tml.sharedirect.sender.SHAREthemActivity.ShareUIHandler.UPDATE_AP_STATUS;
+import static com.tml.sharedirect.utils.Utils.getRandomColor;
 
 /**
  * Controls Hotspot service to share files passed through intent.<br>
