@@ -77,8 +77,8 @@ public class SHAREthemActivity extends AppCompatActivity {
     /*
      * Saves the shared files list in preferences. Useful when activity is opened(from notification or hotspot is already ON) without setting files info on intent
      */
-    public static final String PREFERENCES_KEY_SHARED_FILE_PATHS = "sharethem_shared_file_paths";
-    public static final String PREFERENCES_KEY_DATA_WARNING_SKIP = "sharethem_data_warning_skip";
+    public static final String PREFERENCES_KEY_SHARED_FILE_PATHS = "sharedirect_shared_file_paths";
+    public static final String PREFERENCES_KEY_DATA_WARNING_SKIP = "sharedirect_data_warning_skip";
     private static final int REQUEST_WRITE_SETTINGS = 1;
 
     TextView m_sender_wifi_info;

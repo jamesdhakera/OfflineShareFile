@@ -218,7 +218,7 @@ public class FilesListingFragment extends android.support.v4.app.Fragment {
         request.setTitle(fileName);
 
         //Setting description of request
-        request.setDescription("ShareFile");
+        request.setDescription("ShareDirect");
         request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
 
         //Set the local destination for the downloaded file to a path

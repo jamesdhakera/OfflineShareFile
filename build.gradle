@@ -26,7 +26,7 @@ allprojects {
         //      library checks the targetSdkVersion to take care of above scenarios
         // if targetSdkVersion > 20
         //      If an application's target SDK version is LOLLIPOP or newer, network communication may not use Wi-Fi even if Wi-Fi is connected;
-        //  this might impact when Receiver connectivity to SHAREthem hotspot, library checks for this scenario and prompts user to disable data
+        //  this might impact when Receiver connectivity to SHAREdirect hotspot, library checks for this scenario and prompts user to disable data
         //      For more info: https://developer.android.com/reference/android/net/wifi/WifiManager.html#enableNetwork(int, boolean)
         targetSdkVersion = 20
 

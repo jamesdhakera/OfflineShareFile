@@ -80,7 +80,7 @@ public class WifiUtils {
             else
                 wifiManager.disableNetwork(wifiConfig.networkId);
         }
-        Log.d(TAG, "enableShareThemHotspot wifi result: " + state);
+        Log.d(TAG, "enableShareDirectHotspot wifi result: " + state);
         wifiManager.reconnect();
         return state;
     }

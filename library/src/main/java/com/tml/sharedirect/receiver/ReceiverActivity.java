@@ -226,11 +226,11 @@ public class ReceiverActivity extends AppCompatActivity {
             if (!m_receiver_control.isChecked())
                 changeReceiverControlCheckedStatus(true);
             String ssid = wifiManager.getConnectionInfo().getSSID();
-            Log.d(TAG, "wifi is connected/connecting to ShareFile ap, ssid: " + ssid);         //sharethem replace
+            Log.d(TAG, "wifi is connected/connecting to ShareDirect ap, ssid: " + ssid);         //sharedirect replace
             mConnectedSSID = ssid;
             addSenderFilesListingFragment(WifiUtils.getAccessPointIpAddress(this), ssid);
         } else if (m_receiver_control.isChecked()) {
-            Log.d(TAG, "wifi isn't connected to ShareFile ap, initiating sender search..");     //Sharethem replace
+            Log.d(TAG, "wifi isn't connected to ShareDirect ap, initiating sender search..");     //Sharedirect replace
             resetSenderSearch();
         }
     }
@@ -257,7 +257,7 @@ public class ReceiverActivity extends AppCompatActivity {
     }
 
     /**
-     * Entry point to start receiver mode. Makes calls to register necessary broadcast receivers to start scanning for SHAREthem Wifi Hotspot.
+     * Entry point to start receiver mode. Makes calls to register necessary broadcast receivers to start scanning for SHAREDirect Wifi Hotspot.
      *
      * @return
      */
@@ -416,13 +416,13 @@ public class ReceiverActivity extends AppCompatActivity {
         unRegisterForScanResults();
         boolean resetWifiScan;
         if (info.getSSID().equals(ssid)) {
-            Log.d(TAG, "Already connected to ShareFile, add sender Files listing fragment");    //sharethem replace
+            Log.d(TAG, "Already connected to ShareDirect, add sender Files listing fragment");    //sharethem replace
             resetWifiScan = false;
             addSenderFilesListingFragment(WifiUtils.getAccessPointIpAddress(getApplicationContext()), ssid);
         } else {
             m_p2p_connection_status.setText(getString(R.string.p2p_receiver_connecting_hint, ssid));
             resetWifiScan = !connectToOpenHotspot(wifiManager, ssid, false);
-            Log.e(TAG, "connection attempt to ShareFile wifi is " + (!resetWifiScan ? "success!!!" : "FAILED..!!!"));   //sharethem replace
+            Log.e(TAG, "connection attempt to ShareDirect wifi is " + (!resetWifiScan ? "success!!!" : "FAILED..!!!"));   //sharethem replace
         }
         //if wap isnt successful, start wifi scan
         if (resetWifiScan) {
@@ -469,7 +469,7 @@ public class ReceiverActivity extends AppCompatActivity {
                             m_wifiScanHandler.removeMessages(WAIT_FOR_RECONNECT_ACTION_TIMEOUT);
                             final String ip = WifiUtils.getAccessPointIpAddress(getApplicationContext());
                             preferences.edit().putLong(LASTCONNECTEDTIME, System.currentTimeMillis()).commit();
-                            Log.d(TAG, "client connected to ShareFile hotspot. AP ip address: " + ip);
+                            Log.d(TAG, "client connected to ShareDirect hotspot. AP ip address: " + ip);
                             addSenderFilesListingFragment(ip, info.getSSID());
                         }
 //                        else if (!netInfo.isConnectedOrConnecting() && System.currentTimeMillis() - Prefs.getInstance().loadLong(LASTDISCONNECTEDTIME, 0) >= SYNCTIME) {
